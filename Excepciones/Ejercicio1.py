@@ -1,16 +1,23 @@
-'''Localiza el error en el siguiente bloque de código.
- Crea una excepción para evitar que el programa se bloquee'''
+'''verificar una excepcion 3 veces, si a la tercera se comente el mismo error terminar el programa'''
 
 
-try: 
-        a = int(input("por favor inserte un numero: ")) #insertando el primer dato
-        b = int(input("por favor inserte un numero: ")) #insertando el segundo dato   
-except TypeError:
-        print("Solo inserta numeros") #imprimir advertencia de error
+def division (): #definimos la funcion dividir
+    div = num1/num2
+    print (("Resultado"), (div))
 
-try: 
-        print(a/b)    
-except ZeroDivisionError:
-        print("La division por cero no es correcta") #imprimir advertencia de error
-
-
+condicion =0
+while condicion <3:
+    try:
+        
+        num1 = int(input("Ingrese el primer numero"))
+        num2 = int(input("Ingrese el segundo numero"))
+        division()
+    except TypeError:
+        print("por favor ingresar numeros y no cadena")
+        condicion +=1
+    except ValueError:
+        print("Por favor ingresar numeros")
+        condicion +=1
+    except ZeroDivisionError:
+        print("La division por cero no es posible!! vuelve a intentarlo")
+        condicion +=1       
