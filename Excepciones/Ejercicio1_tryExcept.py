@@ -11,7 +11,7 @@ while condicion <3:
         
         num1 = int(input("Ingrese el primer numero"))
         num2 = int(input("Ingrese el segundo numero"))
-        division()
+        division() #invocando funcion dividir
     except TypeError:
         print("por favor ingresar numeros y no cadena")
         condicion +=1
