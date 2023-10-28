@@ -14,14 +14,7 @@ def multisuma(num1,num2):
 multisuma(num1,num2)
 
 
-'''
-producto = 0
-m = int (input ('Ingresa el valor de m: '))
-n = int (input ('Ingresa el valor de n: '))
-for i in range (1, n + 1):
-    producto=producto+m
-    print ()
-print ('Valor de producto: ' + repr (producto))'''
+
 
 
 
